@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SimpleCalculatorApp.Statistical;
+namespace console_calc.Advanced.Statistical;
 
 public class Statistical
 {
