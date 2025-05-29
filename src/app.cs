@@ -1,5 +1,6 @@
 using System;
 using console_calc.Advanced;
+using console_calc.basic;
 
 namespace console_calc.app
 {
@@ -20,15 +21,15 @@ namespace console_calc.app
                 {
                     case "1":
                         {
-                            string operation = console_calc.basic.simple_sequential.Calc.sequentialGetOperation();
-                            console_calc.basic.simple_sequential.Calc.Calculate(operation);  //Does Not COntain Precedence logic
+                            string operation =basic.simple_sequential.Calc.sequentialGetOperation();
+                            basic.simple_sequential.Calc.Calculate(operation);  //Does Not COntain Precedence logic
                             break;
                         }
 
                     case "2":
                         {
-                            string operation = console_calc.basic.simple_sequential.Calc.sequentialGetOperation();
-                            console_calc.basic.operator_precedence.MathEvaluator.Calculate(operation); // Has Precedence Logic
+                            string operation = basic.simple_sequential.Calc.sequentialGetOperation();
+                            basic.operator_precedence.MathEvaluator.Calculate(operation); // Has Precedence Logic
                             break;
                         }
 
@@ -59,7 +60,7 @@ namespace console_calc.app
                         break;
                     case "2":
                         // For advanced Function
-                        console_calc.Advanced.advancedCalculator.advancedExecution();
+                        advancedCalculator.advancedExecution();
                         break;
                 }
             }
